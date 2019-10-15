@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+*, 
+html {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.holder {
+    background-color: gainsboro;
+}

@@ -1,5 +1,5 @@
 /**
- * Title: Homepage
+ * Title: Banners Component
  * Created by: Charlene Buena
  * Last updated by: Charlene Buena
  * Last updated on: October 15, 2019
@@ -7,10 +7,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    selector: 'app-banners',
+    templateUrl: './banners.component.html',
+    styleUrls: ['./banners.component.css']
 })
-export class HomepageComponent {
+export class BannersComponent {
     title = 'lig-frontend';
 }

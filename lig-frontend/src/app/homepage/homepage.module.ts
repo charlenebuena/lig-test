@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { HomepageRoutingModule } from './homepage-routing.module';
 
 @NgModule({
     declarations: [
@@ -8,7 +9,8 @@ import { SharedModule } from '../shared/shared.module';
     ],
     imports: [
         BrowserModule,
-        SharedModule
+        SharedModule,
+        HomepageRoutingModule
     ],
     providers: [],
 })
