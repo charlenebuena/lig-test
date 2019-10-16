@@ -1,9 +1,12 @@
-<app-header #page></app-header>
-<app-image-slider></app-image-slider>
-<div class="content" (scroll)="scrollHandler()">
-    <router-outlet></router-outlet>
+<div class="whole-page">
+    <app-header></app-header>
+    <app-image-slider></app-image-slider>
+    <div class="content" (scroll)="scrollHandler()">
+        <router-outlet></router-outlet>
+        <app-banners></app-banners>
+    </div>
+    <footer class="footer">
+        <button (click)="scrolltotop()">top</button>
+        <app-footer></app-footer>
+    </footer>
 </div>
-<footer class="footer">
-    <app-footer></app-footer>
-    <button (click)="scrolltotop()">top</button>
-</footer>

@@ -12,14 +12,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./image-slider.component.css']
 })
 export class ImageSliderComponent implements OnInit{
-    images = [
-        '../../../assets/trees.jpeg',
-        '../../../assets/sea.jpeg',
-        '../../../assets/umbrella.jpg'
-    ];
-
-    activeImage = '';
     activeIndex = null;
+    images = [
+        'url(../../../assets/trees.jpeg)',
+        'url(../../../assets/sea.jpeg)',
+        'url(../../../assets/umbrella.jpg)'
+    ];
 
     ngOnInit() {
         this.activeIndex = 0;

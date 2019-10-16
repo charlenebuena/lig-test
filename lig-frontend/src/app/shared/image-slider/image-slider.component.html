@@ -1,9 +1,8 @@
 <div class="slider-holder">
-    <!-- https://stackoverflow.com/questions/27027903/angular-fade-animation-with-css3-transtions -->
     <div class="wrapper">
         <div class="images-arrows">
             <img class="left-arrow" src="../../../assets/left.png" (click)="arrowClicked('left')">
-            <img class="image-view" src={{images[activeIndex]}}>
+            <div class="image-view" [style.background-image]="images[activeIndex]"></div>
             <img class="right-arrow" src="../../../assets/right.png" (click)="arrowClicked('right')">
         </div>
         <div class="image-pager">

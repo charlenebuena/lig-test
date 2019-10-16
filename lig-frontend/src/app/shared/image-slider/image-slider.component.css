@@ -1,21 +1,33 @@
+.slider-holder {
+    width: 100% !important;
+    opacity: 1;
+}
+
 .wrapper {
     display: grid;
-    justify-content: center;
+    width: 100%;
 }
 
 .images-arrows {
     display: flex;
+    width: inherit;
+    justify-content: center;
 }
 
 .image-view {
-    width: 1000px;
+    background-size: cover;
+    min-width: 100%;
+    background-position: bottom;
+    min-height: 600px;
+    opacity: 1;
+    transition: 0.5s ease-in-out all;
 }
 
 .left-arrow,
 .right-arrow {
     width: 50px;
     height: 50px;
-    margin-top: 300px;
+    margin-top: 260px;
     z-index: 0;
     cursor: pointer;
 }
@@ -31,13 +43,13 @@
 .image-pager {
     display: flex;
     justify-content: center;
-    margin: -50px;
+    margin-top: -50px;
 }
 
 .circle {
     width: 15px;
     height: 15px;
-    background: slategrey;
+    background: white;
     border-radius: 50%;
     margin: 3px;
     cursor: pointer;
