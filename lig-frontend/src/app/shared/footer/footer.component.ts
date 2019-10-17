@@ -12,7 +12,7 @@ export class FooterComponent {
         private router: Router
     ) {}
     
-    linkClicked(link) {
+    linkClicked(link: string) {
         this.router.navigate([link]);
     } 
 }

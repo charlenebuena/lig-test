@@ -21,7 +21,7 @@ export class HomepageComponent implements OnInit{
         });
     }
 
-    clickItem(index) {
+    clickItem(index: number) {
         alert(`Navigating to item #${index+1} detail page...`);
         this.router.navigate(['/homepage/detail'], { queryParams: { 'id': index } });
     }
