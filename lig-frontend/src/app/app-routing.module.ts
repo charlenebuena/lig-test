@@ -12,6 +12,10 @@ export const routes: Routes = [
         loadChildren: './homepage/homepage.module#HomepageModule'
     },
     {
+        path: 'contact',
+        loadChildren: './contact/contact.module#ContactModule'
+    },
+    {
         path: '**',
         redirectTo: '/homepage',
         pathMatch: 'full'

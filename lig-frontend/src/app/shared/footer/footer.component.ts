@@ -1,9 +1,4 @@
-/**
- * Title: Footer Component
- * Created by: Charlene Buena
- * Last updated by: Charlene Buena
- * Last updated on: October 15, 2019
- */
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,5 +7,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-    title = 'lig-frontend';
+
+    constructor(
+        private router: Router
+    ) {}
+    
+    linkClicked(link) {
+        this.router.navigate([link]);
+    } 
 }

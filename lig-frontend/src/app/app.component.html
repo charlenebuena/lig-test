@@ -6,7 +6,7 @@
         <app-banners></app-banners>
     </div>
     <footer class="footer">
-        <button (click)="scrolltotop()">top</button>
+        <div class="scrollTop clickable" *ngIf="showScrollTop" (click)="scrolltotop()"></div>
         <app-footer></app-footer>
     </footer>
 </div>

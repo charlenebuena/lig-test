@@ -4,18 +4,20 @@
  * Last updated by: Charlene Buena
  * Last updated on: October 15, 2019
  */
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit{
     title = 'lig-frontend';
+    showScrollTop = false;
 
     scrollEvent() {
-        console.log('scroll');
+
     }
 
     @HostListener('window:scroll', ['$event'])
@@ -23,7 +25,7 @@ export class AppComponent implements OnInit{
     scrollHandler(event) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             // you're at the bottom of the page
-            console.log('bottom');
+            this.showScrollTop = true;
         }
     }
 
