@@ -1,22 +1,23 @@
+@import "../shared";
+
 .slider-holder {
-    width: 100% !important;
+    width: $fullWidth;
     opacity: 1;
 }
 
 .wrapper {
     display: grid;
-    width: 100%;
+    width: $fullWidth;
 }
 
 .images-arrows {
-    display: flex;
+    @include flexJustify(flex, center);
     width: inherit;
-    justify-content: center;
 }
 
 .image-view {
     background-size: cover;
-    min-width: 100%;
+    min-width: $fullWidth;
     background-position: bottom;
     min-height: 600px;
     opacity: 1;
@@ -33,16 +34,15 @@
 }
 
 .left-arrow {
-    margin-right: -80px;
+    margin-right: $slider-arrow-margin;
 }
 
 .right-arrow {
-    margin-left: -80px;
+    margin-left: $slider-arrow-margin;
 }
 
 .image-pager {
-    display: flex;
-    justify-content: center;
+    @include flexJustify(flex, center);
     margin-top: -50px;
 }
 
@@ -53,9 +53,9 @@
     border-radius: 50%;
     margin: 3px;
     cursor: pointer;
-}
 
-.circle:hover {
-    background: gainsboro;
-    transition: 1s linear all;
+    &:hover {
+        background: gainsboro;
+        transition: 1s linear all;
+    }
 }

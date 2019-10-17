@@ -1,9 +1,10 @@
+@import "../shared";
+
 .footer-holder {
     background: black;
     color: white;
-    display: flex;
-    justify-content: space-between;
     padding: 20px 30px;
+    @include flexJustify(flex, space-between);
 }
 
 .clickable {

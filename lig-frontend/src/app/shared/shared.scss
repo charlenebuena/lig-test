@@ -1,0 +1,13 @@
+$fullWidth: 100% !important;
+$slider-arrow-margin: -80px;
+$primary : #fff;
+
+@mixin flexJustify($flexVar, $justifyVar) {
+    display: $flexVar;
+    justify-content: $justifyVar;
+}
+
+@mixin bg-essentials($size, $pos) {
+    background-size: $size;
+    background-position: $pos;
+}

@@ -4,7 +4,7 @@ import { Router, ActivatedRoute, NavigationExtras, Params } from '@angular/route
 @Component({
     selector: '',
     templateUrl: './homepage.component.html',
-    styleUrls: ['./homepage.component.css']
+    styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit{
     numbers = Array(10).fill(0).map((x,i)=>i);

@@ -1,0 +1,32 @@
+@import "../../../shared//shared";
+
+.item-block-wrapper {
+    @include flexJustify(flex, space-between);
+    margin-bottom: 20px;
+
+    &:hover {
+        color: sandybrown;
+    }
+
+    .item-block-img {
+        background: url('../../../../assets/banana.jpg');
+        @include bg-essentials(contain, center);
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 300px;
+    }
+    
+    .item-block-desc {
+        padding: 20px 15px;
+        width: 100%;
+        line-height: 1.3;
+
+        span {
+            font-weight: 900;
+        }
+
+        .gray-text {
+            color: gray;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../../shared/shared";
+
+.homepage-wrapper,
+.see-more {
+    @include flexJustify(flex, space-between);
+}
+
+.holder {
+    width: 70%;
+}
+
+.see-more {
+    padding: 20px;
+    width: 200px;
+    background: black;
+    color: white;
+
+    &:hover {
+        background:#282828;
+        transition: 1s ease-in-out all;
+    }
+}
+
+.right-arrow-more {
+    background: url('../../../../assets/right.png');
+    @include bg-essentials(contain, center);
+    width: 25px;
+    height: 25px;
+    
+}

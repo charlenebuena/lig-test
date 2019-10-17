@@ -1,9 +1,12 @@
-<div class="holder">
-    <div class="item-block-holder">
-        <app-item-block *ngFor="let number of numbers; let i=index" (click)="clickItem(i)"></app-item-block>
-        <div class="see-more clickable" (click)="seeMoreClicked()" *ngIf="showSeeMore">
-            <div>More</div>
-            <div class="right-arrow-more"></div>
+<div class="homepage-wrapper">
+    <div class="holder">
+        <div class="item-block-holder">
+            <app-item-block *ngFor="let number of numbers; let i=index" (click)="clickItem(i)"></app-item-block>
+            <div class="see-more clickable" (click)="seeMoreClicked()" *ngIf="showSeeMore">
+                <div>More</div>
+                <div class="right-arrow-more"></div>
+            </div>
         </div>
     </div>
+    <app-banners></app-banners>
 </div>

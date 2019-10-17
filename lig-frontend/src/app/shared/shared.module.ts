@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule} from '@angular/common';
 import { NgModule } from '@angular/core';
 
 /**
@@ -17,6 +17,7 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
         ImageSliderComponent,
     ],
     imports: [
+        CommonModule
     ],
     exports: [
         HeaderComponent,

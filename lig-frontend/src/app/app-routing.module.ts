@@ -16,6 +16,10 @@ export const routes: Routes = [
         loadChildren: './contact/contact.module#ContactModule'
     },
     {
+        path: 'banner-page',
+        loadChildren: './banner-page/banner-page.module#BannerPageModule'
+    },
+    {
         path: '**',
         redirectTo: '/homepage',
         pathMatch: 'full'

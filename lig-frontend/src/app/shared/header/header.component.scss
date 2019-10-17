@@ -1,13 +1,14 @@
+@import "../shared";
+
 .header-holder {
     text-align: center;
 }
 
 .logo {
     background: url('../../../assets/stain.png');
+    @include bg-essentials(contain, center);
     width: 50px;
     height: 50px;
-    background-size: contain;
-    background-position: center;
     margin: 5px auto;
 }
 
