@@ -1,9 +1,3 @@
-/**
- * Title: Image Slider Component
- * Created by: Charlene Buena
- * Last updated by: Charlene Buena
- * Last updated on: October 16, 2019
- */
 import { Component, OnInit } from '@angular/core';
 
 @Component({

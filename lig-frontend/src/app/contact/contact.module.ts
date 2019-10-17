@@ -8,7 +8,7 @@ import { ContactRoutingModule } from './contact-routing.module';
 
 @NgModule({
     declarations: [
-        ContactComponent
+        ContactComponent,
     ],
     imports: [
         ContactRoutingModule,

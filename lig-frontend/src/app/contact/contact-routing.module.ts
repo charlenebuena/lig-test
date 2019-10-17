@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/main/contact.component';
 
 export const routes: Routes = [
-    { path: '', component: ContactComponent, canActivate: [] }
+    { path: '', component: ContactComponent, canActivate: [] },
 ];
 
 @NgModule({

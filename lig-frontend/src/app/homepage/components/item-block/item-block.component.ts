@@ -1,9 +1,3 @@
-/**
- * Title: Item Block for Homepage
- * Created by: Charlene Buena
- * Last updated by: Charlene Buena
- * Last updated on: October 15, 2019
- */
 import { Component } from '@angular/core';
 
 @Component({

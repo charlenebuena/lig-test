@@ -21,6 +21,11 @@ export class HomepageComponent implements OnInit{
         });
     }
 
+    clickItem(index) {
+        alert(`Navigating to item #${index+1} detail page...`);
+        this.router.navigate(['/homepage/detail'], { queryParams: { 'id': index } });
+    }
+
     queryParamsHandler(params: Params) {
         if (params['content'] && params['content'] === 'all') {
             this.numbers = Array(15).fill(0).map((x,i)=>i);
