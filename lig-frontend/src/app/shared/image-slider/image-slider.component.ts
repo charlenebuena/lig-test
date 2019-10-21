@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ImageSliderComponent implements OnInit{
     activeIndex = null;
     images = [
-        'url(../../../assets/trees.jpeg)',
-        'url(../../../assets/sea.jpeg)',
-        'url(../../../assets/umbrella.jpg)'
+        'url(../../../assets/cat.png)',
+        'url(../../../assets/beach.png)',
+        'url(../../../assets/hill.png)'
     ];
 
     ngOnInit() {

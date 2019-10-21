@@ -1,4 +1,15 @@
 @import "../shared";
+@import "../banners/banners.component";
+
+@font-face {
+    font-family: YuGoth-bold;
+    src: url('../../../assets/yugothib.ttf');
+}
+
+@font-face {
+    font-family: YuGoth-thin;
+    src: url('../../../assets/yugothil.ttf');
+}
 
 .slider-holder {
     width: $fullWidth;
@@ -8,54 +19,72 @@
 .wrapper {
     display: grid;
     width: $fullWidth;
-}
 
-.images-arrows {
-    @include flexJustify(flex, center);
-    width: inherit;
-}
+    .images-arrows {
+        @include flexJustify(flex, center);
+        width: inherit;
 
-.image-view {
-    background-size: cover;
-    min-width: $fullWidth;
-    background-position: bottom;
-    min-height: 600px;
-    opacity: 1;
-    transition: 0.5s ease-in-out all;
-}
+        .image-view {
+            background-size: cover;
+            min-width: $fullWidth;
+            background-position: bottom;
+            min-height: 500px;
+            opacity: 1;
+            transition: 0.5s ease-in-out all;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-family: YuGoth-bold !important;
 
-.left-arrow,
-.right-arrow {
-    width: 50px;
-    height: 50px;
-    margin-top: 260px;
-    z-index: 0;
-    cursor: pointer;
-}
+            .slider-text {
+                @include dumText(30%);
 
-.left-arrow {
-    margin-right: $slider-arrow-margin;
-}
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
 
-.right-arrow {
-    margin-left: $slider-arrow-margin;
-}
+        .left-arrow,
+        .right-arrow {
+            width: 50px;
+            height: 50px;
+            margin-top: 240px;
+            z-index: 100000;
+            cursor: pointer;
+        }
 
-.image-pager {
-    @include flexJustify(flex, center);
-    margin-top: -50px;
-}
+        .left-arrow {
+            margin-right: $slider-arrow-margin;
+        }
+        
+        .right-arrow {
+            margin-left: $slider-arrow-margin;
+        }
 
-.circle {
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-    margin: 3px;
-    cursor: pointer;
-
-    &:hover {
-        background: gainsboro;
-        transition: 1s linear all;
+        
     }
+
+
+    .image-pager {
+        @include flexJustify(flex, center);
+        margin-top: -50px;
+
+        .circle {
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+            margin: 3px;
+            cursor: pointer;
+        
+            &:hover {
+                background: gainsboro;
+                transition: 1s linear all;
+            }
+        }
+    }
+
 }
+
+        

@@ -12,7 +12,7 @@ export const routes: Routes = [
         loadChildren: './homepage/homepage.module#HomepageModule'
     },
     {
-        path: 'contact',
+        path: 'policy',
         loadChildren: './contact/contact.module#ContactModule'
     },
     {

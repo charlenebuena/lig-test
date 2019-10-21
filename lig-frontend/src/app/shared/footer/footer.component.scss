@@ -1,5 +1,9 @@
 @import "../shared";
 
+* {
+    font-family: YuGoth-thin;
+}
+
 .footer-holder {
     background: black;
     color: white;
@@ -8,5 +12,5 @@
 }
 
 .clickable {
-    margin-right: 10px;
+    margin-right: 25px;
 }

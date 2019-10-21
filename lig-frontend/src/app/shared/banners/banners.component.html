@@ -1,13 +1,18 @@
 <aside>
-    <img src="../../../assets/quote.jpg" class="banner-1 clickable" (click)="onBannerClicked(4, 'top')">
+    <div class="banner-1 clickable" (click)="onBannerClicked(4, 'top')"><span class="dum-text">Dummy Banner</span></div>
     <div class="recommend">
         <h1>Recommend</h1>
         <div class="recom-prev clickable" *ngFor="let rec of recommend; let n=index" (click)="onBannerClicked(n, 'recom')">
             <div class="recom-img"></div>
-            <div class="recom-txt">This is a sample text for recom asasasa asasa asakajsa asas</div>
+            <div class="recom-texts">
+                <div class="txt">サンプルテキストサンプルテキストサンプルテキスト</div>
+                <div class="date">2016.03.26</div>
+            </div>
         </div>
     </div>
     <div class="buttons">
-        <div class="dummy-banner clickable" *ngFor="let dum of dummy; let i=index" (click)="onBannerClicked(i, 'dummy')">Dummy Banner</div>
+        <div class="dummy-banner clickable" *ngFor="let dum of dummy; let i=index" (click)="onBannerClicked(i, 'dummy')">
+            <span>Dummy Banner</span>
+        </div>
     </div>
 </aside>

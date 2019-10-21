@@ -2,18 +2,11 @@
 
 .header-holder {
     text-align: center;
+    font-family: cursive;
+    font-size: 30px;
 }
 
 .logo {
-    background: url('../../../assets/stain.png');
-    @include bg-essentials(contain, center);
-    width: 50px;
-    height: 50px;
-    margin: 5px auto;
-}
-
-.logo:hover {
-    width: 100px;
-    height: 100px;
-    transition: 1s linear all;
+    width: 200px;
+    margin: 20px auto;
 }
