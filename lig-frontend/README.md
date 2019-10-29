@@ -15,3 +15,8 @@ If error occurs upon running `ng serve`, proceed to step number 3
 ## 3. Installation of Angular CLI
 
 Input the command `npm install -g @angular/cli` to install Angular CLI. If further errors occur, install its dependencies depending on the error
+
+![](./src/assets/readme/home1.png)
+![](./src/assets/readme/home2.png)
+![](./src/assets/readme/detail.png)
+![](./src/assets/readme/banner.png)
